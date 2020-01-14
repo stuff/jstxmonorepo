@@ -32025,7 +32025,7 @@ var Hello = function Hello(_ref) {
   var name = _ref.name;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stuff_ui_foo__WEBPACK_IMPORTED_MODULE_1__["Component2"], {
     name: name
-  }, name, " !!");
+  }, name, ' ', "!!");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
@@ -32057,7 +32057,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 console.log(Object(_lib__WEBPACK_IMPORTED_MODULE_3__["sayHello"])('STuFF'));
-console.log(Object(_stuff_sdk__WEBPACK_IMPORTED_MODULE_2__["myfunc"])(4));
+console.log(Object(_stuff_sdk__WEBPACK_IMPORTED_MODULE_2__["myfunc"])('4'));
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Hello__WEBPACK_IMPORTED_MODULE_4__["default"], {
   name: "STuFF"
 }), document.getElementById('foo'));
