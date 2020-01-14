@@ -1,0 +1,15 @@
+{
+  "name": "@stuff/app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "@stuff/ui": "1.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

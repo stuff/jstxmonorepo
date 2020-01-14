@@ -1,0 +1,29 @@
+{
+  "name": "jstxmonorepo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "app:build": "yarn workspace @stuff/app build",
+    "app:watch": "yarn workspace @stuff/app watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.0",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "babel-loader": "^8.0.6",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
