@@ -1,3 +1,3 @@
-export const myfunc = (a: string): string => {
-  return a + ' ok';
-};
+/* eslint-disable import/prefer-default-export */
+
+export const myfunc = (a: string): string => `${a} ok`;

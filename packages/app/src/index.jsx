@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* global document */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { myfunc } from '@stuff/sdk';

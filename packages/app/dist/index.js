@@ -31942,8 +31942,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "myfunc", function() { return myfunc; });
+/* eslint-disable import/prefer-default-export */
 var myfunc = function myfunc(a) {
-  return a + ' ok';
+  return "".concat(a, " ok");
 };
 
 /***/ }),
@@ -31958,8 +31959,9 @@ var myfunc = function myfunc(a) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "myfunc2", function() { return myfunc2; });
+/* eslint-disable import/prefer-default-export */
 var myfunc2 = function myfunc2(a) {
-  return a + 'ok2';
+  return "".concat(a, "ok2");
 };
 
 /***/ }),
@@ -31976,6 +31978,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_Component2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/Component2 */ "../ui/src/Component2.jsx");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Component2", function() { return _src_Component2__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
+/* eslint-disable import/prefer-default-export */
 
 
 /***/ }),
@@ -31991,12 +31994,12 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
+ // eslint-disable-next-line react/prop-types
 
 var Component2 = function Component2(_ref) {
   var name = _ref.name,
       children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is a component."), children);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is a component.", name), children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Component2);
@@ -32020,7 +32023,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Hello = function Hello(_ref) {
   var name = _ref.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stuff_ui_foo__WEBPACK_IMPORTED_MODULE_1__["Component2"], null, name, " !!");
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stuff_ui_foo__WEBPACK_IMPORTED_MODULE_1__["Component2"], null, name, ' ', "!!");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
@@ -32043,6 +32046,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stuff_sdk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @stuff/sdk */ "../sdk/index.ts");
 /* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib */ "./src/lib.js");
 /* harmony import */ var _Hello__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Hello */ "./src/Hello.tsx");
+/* eslint-disable no-console */
+
+/* global document */
 
 
 
@@ -32066,6 +32072,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sayHello", function() { return sayHello; });
+/* eslint-disable import/prefer-default-export */
 var sayHello = function sayHello(name) {
   var a = 'hello';
   return "".concat(a, " ").concat(name);
