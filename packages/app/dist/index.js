@@ -32023,7 +32023,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Hello = function Hello(_ref) {
   var name = _ref.name;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stuff_ui_foo__WEBPACK_IMPORTED_MODULE_1__["Component2"], null, name, ' ', "!!");
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_stuff_ui_foo__WEBPACK_IMPORTED_MODULE_1__["Component2"], {
+    name: name
+  }, name, " !!");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);

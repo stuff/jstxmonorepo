@@ -6,12 +6,6 @@ type HelloProps = {
   name: string;
 };
 
-const Hello = ({ name }: HelloProps) => (
-  <Component2>
-    {name}
-    {' '}
-!!
-  </Component2>
-);
+const Hello = ({ name }: HelloProps) => <Component2 name={name}>{name} !!</Component2>;
 
 export default Hello;
